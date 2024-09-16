@@ -1,12 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD Luxe Movies | Watch HD Movies Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+            color: #ffcc00;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .banner {
+            background-image: url('https://example.com/movie-banner.jpg'); /* Replace with actual movie banner */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+            text-align: center;
+        }
+        .banner h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: #ffcc00;
+        }
+        .cta-button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #e6b800;
+        }
+        .movie-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .movie-info h3 {
+            font-size: 28px;
+        }
+        .movie-info p {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #ccc;
+        }
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>HD Luxe Movies</h1>
+    </header>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <div class="banner">
+        <h2>Watch Movies in Stunning HD Quality</h2>
+    </div>
 
+    <div class="container">
+        <div class="movie-info">
+            <h3>Exclusive Offer: Watch HD Movies Now!</h3>
+            <p>Sign up now and get instant access to unlimited HD movies. No ads, no interruptions. Stream on any device, anywhere!</p>
+            <button class="cta-button" id="unlock-content">Get Access Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 HD Luxe | All Rights Reserved | <a href="#" style="color:#ffcc00;">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Add your CPA Locker Script below -->
+    <script>
+        // Redirect to your CPA locker or integrate a CPA locker service
+        document.getElementById("unlock-content").addEventListener("click", function() {
+            // Example CPA locker script integration
+            window.location.href = "https://your-cpa-locker-link.com"; // Replace with your actual CPA locker URL
+        });
+    </script>
 </body>
 </html>
