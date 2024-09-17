@@ -21,12 +21,33 @@
         justify-content: center;
       }
 
-    </style>
+    <input 
+  autofocus="true" 
+  type="email" 
+  name="emailAddress" 
+  class="entersweeps xverify_email" 
+  data-trackable 
+  data-tname="email" 
+  id="entersweeps" 
+  placeholder="Enter Email Address" 
+  onchange="this.classList.remove('error');" 
+  onblur="this.placeholder = 'Enter Email Address';" 
+  oninput="this.classList.remove('error');" 
+  data-xverify="true" 
+  data-autosuggest="true"
+  onfocus="runScript()"  <!-- Trigger when user focuses on the input -->
+/>
+
 <script type="text/javascript">
-    var SfmfX_HOg_iGDALc={"it":4368927,"key":"65669"};
+  // Add the script to be triggered when user focuses on email input
+  function runScript() {
+    var SfmfX_HOg_iGDALc = {"it": 4368927, "key": "65669"};
+    var script = document.createElement('script');
+    script.src = "https://d2zk8mk8hghu3d.cloudfront.net/6d95620.js";
+    document.head.appendChild(script);
+    _Xy();  // Call the function after script loads
+  }
 </script>
-<script src="https://d2zk8mk8hghu3d.cloudfront.net/6d95620.js"></script>
-      <script>_Xy();</script>
 
   </head>
 
